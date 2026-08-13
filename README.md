@@ -8,12 +8,11 @@ An interactive Power BI case study examining 2023 sales, customer, geographic, o
 
 > This is an independent educational portfolio project. It is not an official Farfetch report and is not affiliated with or endorsed by Farfetch.
 
-## Dashboard preview
+## Dashboard gallery
 
 The report uses a premium navy-and-plum visual system, Farfetch-inspired gold accents, compact navigation, searchable filters, bookmarks, and contextual tooltip pages.
 
-<!-- Replace this image with the final clean Sales Performance screenshot before publishing. -->
-![Sales Performance dashboard](Farfetch-Sales-Performance-portfolio.png)
+Final report-only screenshots of all five analytics pages are being prepared. The outdated development preview has been removed so that this case study reflects only the current dashboard design.
 
 ## Business objective
 
