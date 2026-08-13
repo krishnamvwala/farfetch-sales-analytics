@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Farfetch"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "60b53128-318d-41d9-931b-7b6d3574152f"
+  }
+}

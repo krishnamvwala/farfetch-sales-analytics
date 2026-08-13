@@ -1,0 +1,84 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 90.4000015258789
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 370.0088561856295,
+            "y": 0
+          },
+          "nodeIndex": "customers",
+          "nodeLineageTag": "e07825e9-f5da-4a82-ac5c-947492bf0b95",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 208.47185403073507
+          },
+          "nodeIndex": "refunds",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 651.83148555123171,
+            "y": 254.3975225360133
+          },
+          "nodeIndex": "products",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 232.67958300860266,
+            "y": 542.00179312702949
+          },
+          "nodeIndex": "orders",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 709.83148555123171,
+            "y": 91.000896563514743
+          },
+          "nodeIndex": "measures (2)",
+          "nodeLineageTag": "4fa2e60c-6c71-4d64-b791-915542113781",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 1
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

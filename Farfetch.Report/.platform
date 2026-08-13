@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Farfetch"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "edb15fec-f4a6-457a-a3ac-82eebca68277"
+  }
+}

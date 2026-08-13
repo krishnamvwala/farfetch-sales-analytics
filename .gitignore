@@ -1,0 +1,28 @@
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+
+# Power BI generated/local state
+*.pbix
+*.bak
+*.tmp
+
+# Development backups and one-off migration scripts
+Farfetch.Report/report.before-*.json
+Farfetch.Report/report.failed-backup.json
+Farfetch.SemanticModel/model.before-*.bim
+*.ps1
+
+# Working screenshots and test captures
+*-current.png
+*-review.png
+review-page-*.png
+test-*.png
+tooltip-*.png
+refund-*.png
+powerbi-*.png
+bookmark-*.png
+open-*.png
+product-tooltip-*.png
+
+# Local database export is excluded from the public portfolio by default
+Farfetch luxury store.sql
