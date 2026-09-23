@@ -1,16 +1,13 @@
-# Portfolio screenshot gallery
+# Report screenshots
 
-## Published
+These images were exported directly from the refreshed Power BI report with all filters cleared.
 
-- `01-sales-performance.png` — verified capture of the current redesigned Sales Performance page
+1. [Executive Overview](01-executive-overview.png)
+2. [Geographic Analysis](02-geographic-analysis.png)
+3. [Customer Insights](03-customer-insights.png)
+4. [Refunds & Returns](04-refunds-returns.png)
+5. [Orders & Sales Trends](05-orders-sales-trends.png)
+6. [Inventory Detail](06-inventory-detail.png)
+7. [How to Read](07-how-to-read.png)
 
-## Planned
-
-Add the remaining redesigned pages at a consistent resolution using these filenames:
-
-- `02-geographic-analysis.png`
-- `03-customer-insights.png`
-- `04-refunds-returns.png`
-- `05-orders-sales-trends.png`
-
-Capture only the report canvas—exclude the Power BI ribbon, Filters pane, Data pane, taskbar, and window chrome. Verify every image against the current saved design before publishing it.
+See the [project overview](../README.md) for findings and the report download.
