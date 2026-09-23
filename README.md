@@ -1,105 +1,80 @@
-# Farfetch Sales Analytics Dashboard
+# Farfetch | Executive Sales Analytics
 
-![Power BI](https://img.shields.io/badge/Power%20BI-Portfolio%20Project-F2C811?logo=powerbi&logoColor=black)
-![Year](https://img.shields.io/badge/Analysis-2023-7C3AED)
-![Status](https://img.shields.io/badge/Status-Portfolio%20Ready-22C55E)
+A seven-page Power BI report exploring 2023 order value, customer behavior, geographic performance and refund outcomes. It brings 34 original currencies into a consistent USD view and pairs the results with clear definitions and questions to investigate.
 
-An interactive Power BI case study examining 2023 sales, customer, geographic, order, inventory, and refund performance for a fictionalized Farfetch retail dataset.
+**[Download the Power BI report](Farfetch.pbix?raw=true)** · [Browse all screenshots](docs/)
 
-> This is an independent educational portfolio project. It is not an official Farfetch report and is not affiliated with or endorsed by Farfetch.
+![Executive overview showing order value, orders, average order value, leading brands and monthly performance](docs/01-executive-overview.png)
 
-## Dashboard preview
+## At a glance
 
-The report uses a premium navy-and-plum visual system, Farfetch-inspired gold accents, compact navigation, searchable filters, bookmarks, and contextual tooltip pages.
+| Metric | Full-year result |
+|---|---:|
+| Converted order value | **$1,259,328.87 USD** |
+| Orders | **471** |
+| Order lines | **476** |
+| Average order value | **$2,673.73 USD** |
+| Purchasing customers | **432** |
+| Repeat buyers | **30 · 6.9%** |
+| Refund requests | **20** |
+| Processed refunds | **13 · $2,434.90 USD** |
 
-![Farfetch Sales Performance dashboard](docs/01-sales-performance.png)
+## What the report shows
 
-## Business objective
+- **Market concentration:** the USA and France account for approximately **80.5%** of converted order value. Their contribution makes market concentration a useful starting point for discussion.
+- **Brand contribution:** Louis Vuitton leads allocated order value. Brand values split each order by its lines' price shares.
+- **Customer behavior:** **402 buyers purchased once** and **30 purchased more than once**. This highlights a repeat-purchase opportunity; it is not a retention measure.
+- **Monthly movement:** October has the highest converted order value, at **$123,314.20**. December is **5.5% below November**.
+- **Refund follow-up:** requests comprise **13 processed, 4 pending and 3 rejected**. Pending cases and request reasons are separated from processed refund amounts.
 
-The project turns transactional retail data into a decision-focused dashboard that answers:
+## Explore the report
 
-- Which brands, products, and countries generate the most sales?
-- How does performance change throughout the year?
-- Which customers and customer segments contribute most?
-- What is the average order value?
-- Which products and payment methods drive refunds?
-- Is the refund rate within an acceptable operating range?
+### Geographic Analysis
 
-## Report pages
+Compare customer countries on the map and use the ranked table to see their value, share and order count. The USA contributes **45.6%**, France **34.9%** and Italy **12.5%**.
 
-1. **Sales Performance** — total sales, products sold, orders, average order value, brand performance, and monthly sales.
-2. **Geographic Analysis** — country and city sales distribution, interactive map bubbles, and ranked country performance.
-3. **Customer Insights** — customer segments, top customers, customer sales, location filters, and country distribution.
-4. **Refunds & Returns** — refund rate, refunded products, refund value, and payment-method analysis.
-5. **Orders & Sales Trends** — monthly trends, order status, inventory by brand, and average order value.
+![Geographic analysis with a country map and ranked USD order values](docs/02-geographic-analysis.png)
 
-Two hidden report pages provide focused product and brand tooltips without overcrowding the main report.
+### Customer Insights
 
-## Key measures
+See purchasing customers, repeat buyers and top customers. The report distinguishes the **451 customer records** from the **432 customers who placed orders**.
 
-- Total Sales
-- Total Quantity Sold
-- Number of Orders
-- Average Order Value
-- Customer Count
-- Refund Count
-- Total Refund Amount
-- Refund Rate
-- Average Product Price
-- Total Stock Quantity
+![Customer insights showing one-time and repeat buyers and top customers](docs/03-customer-insights.png)
 
-## Design and interaction
+### Refunds & Returns
 
-- Premium navy/plum canvas with translucent rounded panels
-- Gold for primary sales metrics, blue for customer/geographic information, and amber/red for refund risk
-- Consistent navigation across all five pages
-- Searchable Country, City, and Brand slicers
-- Top-customer, brand-focus, reset, and drillthrough bookmarks
-- Report-page tooltips for product and brand context
-- Consistent currency, percentage, and count formatting
-- Cross-filtering between related visuals
+Review request reasons, outcomes and order-level detail. **4.2% of orders** have a request; **2.8%** have a processed refund.
 
-## Key observations
+![Refund analysis showing request rates, processed amounts, pending cases and reasons](docs/04-refunds-returns.png)
 
-- Sales are concentrated among a relatively small group of leading brands and countries.
-- The United States and France are among the strongest geographic markets.
-- Monthly sales vary throughout the year, highlighting periods for deeper commercial analysis.
-- Customer segmentation reveals meaningful differences in the composition of the customer base.
-- The refund rate is approximately 4%, making returns an important operating KPI to monitor.
+### Orders & Sales Trends
 
-## Repository structure
+Follow monthly order value and month-over-month changes alongside recorded order status. Missing prior-period data stays blank.
 
-```text
-Farfetch.pbip                  Power BI project entry point
-Farfetch.Report/              Report pages, visuals, theme, and bookmarks
-Farfetch.SemanticModel/       Data model, Power Query, relationships, and DAX measures
-docs/                         Portfolio screenshots and supporting assets
-README.md                     Project case study
-```
+![Monthly USD order values, monthly comparisons and recorded order statuses](docs/05-orders-sales-trends.png)
 
-The local `.pbix`, database export, generated cache files, working backups, and development screenshots are excluded from the public repository.
+### Inventory Detail
 
-## Open the project
+Inspect recorded stock by source row. This appendix explains why the available records cannot establish a current inventory balance.
 
-1. Install a current version of Power BI Desktop.
-2. Clone or download this repository.
-3. Open `Farfetch.pbip`.
-4. Update the MySQL source credentials and server/database settings in Power Query if you have access to a compatible dataset.
-5. Refresh the model.
+![Inventory appendix with product-level source records and interpretation notes](docs/06-inventory-detail.png)
 
-The report currently references a local MySQL source. The raw dataset is intentionally not published in this repository.
+### How to Read
 
-## Skills demonstrated
+A built-in guide explains navigation, filters, currency conversion, metric definitions and the limits of the data.
 
-- Power BI Desktop and PBIP project structure
-- Power Query transformation
-- Relational data modeling
-- DAX measure development
-- KPI and business-question selection
-- Bookmarks, drillthrough, and report-page tooltips
-- Interactive navigation and slicer design
-- Dashboard UX, accessibility, and visual storytelling
+![Reading guide explaining the report's metrics, assumptions and data snapshot](docs/07-how-to-read.png)
 
-## Portfolio summary
+## Open and explore
 
-This project demonstrates an end-to-end analytics workflow: preparing relational retail data, building reusable measures, designing an interactive report, validating user interactions, and translating the output into a stakeholder-ready business narrative.
+Download **[Farfetch.pbix](Farfetch.pbix?raw=true)** and open it in Power BI Desktop. The data is included; no MySQL connection is needed. To edit the project files, download the repository and open **[Farfetch.pbip](Farfetch.pbip)**, then refresh.
+
+Start with Executive Overview, then filter by order month, customer country, brand or original currency. Filters apply to the current page. In Desktop edit mode, use **Ctrl+click** on the navigation buttons. Scroll inside charts and tables for additional entries.
+
+## Data and interpretation
+
+This independent educational case study uses fictionalized 2023 retail data and is not affiliated with Farfetch. USD values restate the orders using a fixed **23 September 2026, 00:02 UTC** rate snapshot (**22 September in Chicago**), rather than historical transaction-date exchange rates. Refresh reloads the included snapshot; it does not retrieve newer orders or rates.
+
+Order lines are records, not units sold. Refunds belong to orders; their currency is assumed to match the order currency. Profit, budget and prior-year comparisons are outside the supplied data.
+
+Exchange-rate attribution: **[ExchangeRate-API](https://www.exchangerate-api.com/)**. Legacy HRK conversion uses the **[ECB's fixed HRK/EUR rate](https://www.ecb.europa.eu/press/pr/date/2022/html/ecb.pr220712~b97dd38de3.en.html)**.
